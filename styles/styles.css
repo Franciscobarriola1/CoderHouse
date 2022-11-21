@@ -1,0 +1,170 @@
+/*Pagina index.html */
+html{
+    font-size: 62.5%; /* 1rem = 10px*/
+    box-sizing: border-box;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    border: 0;
+    outline: 0;
+    font-size: 100%;
+    vertical-align: baseline;
+    background: transparent;
+}
+body{
+    height: 100%;
+    
+    
+    
+}
+header{
+    margin-top:-30px;
+    background-color: bisque;
+}
+button{
+    cursor: pointer;
+}
+.login{
+    padding-right: 2rem;
+    margin: 2rem;
+    text-align: end;
+    cursor: pointer;
+}
+.login__boton{
+        display: inline-block;
+        background-color: rgb(117, 77, 29);
+        color: #ffffff;
+        padding: 1rem 2.5rem;
+        margin-top: 1rem;
+        font-size: 1.5rem;
+        text-decoration: none;
+        font-weight: bold;
+        border-radius: 5rem;
+        width: 8.5%;
+        align-items: end;
+        border: none;
+      
+   
+}
+
+
+
+.titulo{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 25%;
+    padding-bottom: 3rem;
+}
+
+.navegacion{
+    position: relative;
+    text-align: center;
+    font-size: 2.5em;
+    word-spacing: 2.5em;
+    
+}
+
+ul{
+    display: inline;
+}
+li{
+    list-style-type: none;
+}
+main{
+    display: inline-block;
+    width: 100%;
+    background-color: blanchedalmond;
+    position: relative;
+    
+}
+
+h1{
+    
+    text-align: center;
+    margin-top: 3.5rem;
+    font-size: 3.5rem;
+    color: red
+}
+
+.main__section__image{
+    width: 275px;
+    height: 275px;
+}
+
+.contacto{
+    position: relative;
+    left: 60%;
+    bottom: 55%;
+}
+
+.sobre ,.sucursales{
+    margin-left: 10%;
+    margin-bottom: 10%;
+}
+.main__section__parrafo{
+    margin-left: 310px;
+    margin-top: 150px;
+    position: relative;
+}
+.main__section__parrafo__hijo{
+    position: absolute;
+    top: 50;
+}
+
+
+footer{
+ 
+    bottom: 10px;
+    height: 100%;
+    background: #f0f0f0;
+    width: 100%;
+    background-color: black;
+}
+
+footer .pie-de-pagina{
+    color: white;
+}
+p{
+    font-size: 2rem;
+}
+
+.pie-de-pagina__elementos_social{
+    color: white;
+}
+.pie-de-pagina__texto1{
+    text-align: end;
+    font-size: 1.5rem;
+    margin-right: 40px;
+    
+}
+.pie-de-pagina__texto2{
+    text-align: center;
+    font-size: 1.5rem;
+}
+
+/* Pagina sobre.html*/
+h3{
+    
+    text-decoration: underline;
+    font-size: 2.5rem;
+    text-align: center;
+    margin-top: 50px;
+    margin-bottom: 25px;
+    margin-right: 25%
+}
+.main__historia{
+   height: 500px;
+   width: 600px;
+   position: relative;
+   left: 35%;
+   text-align: justify;
+}
+
+/* Sucursales */
+
+iframe:first-child{
+    margin-bottom: 50px;
+}
