@@ -7,79 +7,182 @@
     <title>Heladeria Real</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-     <link rel="stylesheet" href="../styles/bootstrap.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles/bootstrap.min.css">
     <link rel="stylesheet" href="styles/styles.css">
+    <link rel="icon" href="assets/icons/favicon-16x16.png">
+    <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+  />
+    
 </head>
 <body>
-    <br>
+    
     <header>
+        
         <!--Botones para registrarse y logear-->
-        <div class="login">
-            
-            <a href="pages/unete.html"><button type="submit" class="login__boton">Iniciar Sesion</button></a>
-            <a href="pages/unete.html"><button type="submit"class="login__boton">Registrarse</button></a>
-            
-        </div>
-        <div class="titulo">
-            <a href="index.html" class="titulo__imagen"><img src="assets/images/Helderia-Real.png" alt="heladeria real"></a>
-        </div>
         <div class="navegacion">
-            <nav class="navegacion__barra">
+              <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+            <div class="container-fluid">
+              <a class="navbar-brand" href="#">Heladeria Real</a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarNav">
+                <div class="d-flex justify-content-center align-items-center">
+                  <ul class="navbar-nav navegacion__items "> 
+                    <li class="nav-item"> 
+                        <a class="nav-link  active" href="#">Home</a>
+                    </li>
                 
-                    <a href="#" class="navegacion__items">Home</a>
-                    <a href="pages/sobre.html" class="navegacion__items">Historia</a>
-                    <a href="pages/sucursales.html" class="navegacion__items">Sucursales</a>
-                    <a href="pages/contacto.html" class="navegacion__items">Contacto</a>
-                    <a href="pages/unete.html" class="navegacion__items">Unete</a>
+                    <li class="nav-item">  
+                        <a class="nav-link  " href="pages/sobre.html">Historia</a>
+                    </li>
                 
-            </nav>
-            
+                    <li class="nav-item">  
+                        <a class="nav-link " href="pages/sucursales.html">Sucursales</a>
+                    </li>
+                
+                    <li class="nav-item"> 
+                        <a class="nav-link " href="pages/contacto.html">Contacto</a>
+                    </li>
+                
+                    <li class="nav-item">  
+                        <a class="nav-link  " href="pages/unete.html">Unete</a>
+                    </li>
+                </ul>
+                </div>
+              
+              </div>
+            </div>
+          </nav>
            
+              
         </div>
-    </header>
-    <main class="main">
-        <h1>Los mejores helados artesanales</h1>
-        <!--3 imagenes y su descripcion con link para ir a sus respectivas paginas-->>
-        <div class="sobre">
-            <a href="pages/sobre.html"> 
-                <p class="main__section__parrafo">Descubre nuestra historia</p>
-                <img src="assets/images/imagen1heladeria.jpg" alt="Historia" class="main__section__image">
-            </a>
-           
-
-        </div>
-        <div class="sucursales"> 
-            <a href="pages/sucursales.html">
-                <p class="main__section__parrafo">Nuestras Sucursales</p>
-                <img src="assets/images/Helderia-Real-sucursal.jpg" alt="sucursales" class="main__section__image image__sucursales">
-            </a>
-            
-        </div>
-        <div class="contacto">
-            <a href="pages/contacto.html">
-                <p class="main__section__parrafo">Contactanos</p></a>
-                <img src="assets/images/contacto.png" alt="contacto" class="main__section__image image__contacto">
-            </a>  
-        </div>
-     
-
+            <div class="text-center">
+                 <a href="index.html" class="rounded"><img src="assets/images/Helderia-Real.png" alt="heladeria real"></a>
+            </div>
+    
        
-    </main>
+    </header>
+    <div class="container">
+        <main class="main">
+            <h1>Los mejores helados artesanales</h1>
+            <!--4    imagenes y su descripcion con link para ir a sus respectivas paginas-->
+                <div class="card">
+                    <div class="row animate__animated animate__slideInLeft animate__delay-1s">
+                                <div class="col-md-4">
+                                    <a href="pages/sobre.html">   
+                                    <img src="assets/images/imagen1heladeria.jpg" alt="Historia" class="main__section__image img-fluid rounded m-auto d-block"> 
+                                    </a>  
+                                </div>
 
-    <footer>
+                                <div class="col-md-8">
+                                    <div class="card-body  d-flex flex-column  align-items-center justify-content-center">
+                                        <h3 class="card-title">
+                                            Historia
+                                        </h3>
+                                        <p class="card-text">Descubre nuestra historia: Como comenzo todo y como se llegomos a los sabores de la actualidad.</p> 
+                                        <div class="boton">
+                                            <a href="pages/sobre.html"><button class="btn btn-primary  boton m-auto" type="button">Leer más</button></a> 
+                                        </div>
+                                    </div>
+                                </div>
+                            
+                    </div>
+                
+                </div>
+                <div class="card">
+                    <div class="row animate__animated animate__slideInRight animate__delay-1s">
+                               <div class="col-md-8">
+                                    <div class="card-body  d-flex flex-column  align-items-center justify-content-center">
+                                        <h3 class="card-title">
+                                            Nuestras Sucursales
+                                        </h3>
+                                        <p class="card-text">Descubre nuestra historia: Como comenzo todo y como se llegamos a los sabores de la actualidad.</p> 
+                                        <a href="pages/sucursales.html"><button class="btn btn-primary bt-lg boton" type="button">Leer más</button></a> 
+                                    
+                                    </div>
+                                </div>
+                                <div class="col-md-4">
+                                    <a href="pages/sucursales.html">   
+                                        <img src="assets/images/Helderia-Real-sucursal.jpg" alt="sucursales" class="main__section__image img-fluid rounded m-auto d-block"> 
+                                    </a>  
+                                </div>
+
+                              
+                            
+                    </div>
+                
+                </div>
+                <div class="card">
+                    <div class="row animate__animated animate__slideInLeft animate__delay-2s">
+                                <div class="col-md-4">
+                                    <a href="pages/contacto.html">   
+                                        <img src="assets/images/contacto.png" alt="contacto" class="main__section__image img-fluid rounded m-auto d-block"> 
+                                    </a>  
+                                </div>
+
+                                <div class="col-md-8">
+                                    <div class="card-body  d-flex flex-column  align-items-center justify-content-center">
+                                        <h3 class="card-title">
+                                            Contactanos
+                                        </h3>
+                                        <p class="card-text">Descubre nuestra historia: Como comenzo todo y como se llegomos a los sabores de la actualidad.</p> 
+                                        <div class="boton">
+                                            <a href="pages/contacto.html"><button class="btn btn-primary  boton m-auto" type="button">Leer más</button></a> 
+                                        </div>
+                                    </div>
+                                </div>
+                            
+                    </div>
+
+                    <div class="card">
+                        <div class="row animate__animated animate__slideInRight animate__delay-2s">
+                                   <div class="col-md-8">
+                                        <div class="card-body  d-flex flex-column  align-items-center justify-content-center">
+                                            <h3 class="card-title">
+                                                Unete
+                                            </h3>
+                                            <p class="card-text">Descubre nuestra historia: Como comenzo todo y como se llegamos a los sabores de la actualidad.</p> 
+                                            <a href="pages/unete.html"><button class="btn btn-primary bt-lg boton" type="button">Leer más</button></a> 
+                                        
+                                        </div>
+                                    </div>
+                                    <div class="col-md-4">
+                                        <a href="pages/unete.html">   
+                                            <img src="assets/images/imagenhelado.jpg" alt="sucursales" class="main__section__image img-fluid rounded m-auto d-block"> 
+                                        </a>  
+                                    </div>
+                                  
+                        </div>
+                   </div>                       
+        </main>
+    </div>
+    <footer class="d-flex flex-column ">
         <!--pie de pagina con redes sociales y relleno-->
         <div class="pie-de-pagina">
-            <a href="https://es-la.facebook.com/LaRealheladeria/"  class="pie-de-pagina__elementos__social" target="_blank"><img src="" alt="facebook icon"></a>
-            <a href="https://www.instagram.com/heladeria.real.campana/?hl=es"  class="pie-de-pagina__elementos__social" target="_blank"> <img src="" alt="instagram icon"></a>
-            <p  class="pie-de-pagina__texto2">Servicio al Consumidor</p>
-            <p  class="pie-de-pagina__texto2">Preguntas Frecuentes</p>
+        <ul m-right>
+            <li><a href="https://es-la.facebook.com/LaRealheladeria/"  class="pie-de-pagina__elementos__social" target="_blank"><ion-icon name="logo-facebook"></ion-icon></a></li>
+            <li><a href="https://www.instagram.com/heladeria.real.campana/?hl=es"  class="pie-de-pagina__elementos__social" target="_blank"> <ion-icon name="logo-instagram"></ion-icon>
+            </a></li>
+        </ul>    
+            <a href="#"><p  class="pie-de-pagina__texto2">Servicio al Consumidor</p></a>
+            <a href=""><p  class="pie-de-pagina__texto2">Preguntas Frecuentes</p></a>
             <p  class="pie-de-pagina__texto1">Ser parte del equipo: 
                 <br> Comunicate:
                 franquicias@heladeriareal.com.ar
+                <div class="text-center">
+                ® Heladeria Real 2022. Todos los derechos reservados. Terminos de uso | Privacidad
+                </div>
             </p>
-            <p class="pie-de-pagina__texto2">® Heladeria Real 2022. Todos los derechos reservados. Terminos de uso | Privacidad</p>
+            
         </div>
     </footer>
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
     <script src="../js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
