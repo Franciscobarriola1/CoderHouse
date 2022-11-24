@@ -100,8 +100,8 @@ ul li{
     color: white;
 
 }
-.derechos{
-    font-size: 0.2 rem;
+div, .derechos{
+    font-size: 10 px;
 }
 /* Pagina sobre.html*/
 
@@ -131,7 +131,13 @@ img{
     *{
         width: auto;    
     }
-  
+    card{
+        text-align: center;
+        justify-content: center;
+    }
+  .derechos{
+    font-size: 10px;
+  }
      
     
 }
