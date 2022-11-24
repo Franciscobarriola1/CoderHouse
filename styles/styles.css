@@ -138,6 +138,12 @@ img{
   .derechos{
     font-size: 10px;
   }
-     
-    
+     footer{
+        text-align: center;
+        justify-content: center;
+     }
+    .iconos{
+        justify-content: flex-end;
+        
+    }
 }
