@@ -150,5 +150,14 @@ img{
     .container__sucursal{
         width: 100%;
     }
+    h1{
+        color: rgb(233, 67, 67, 1);
+    }
+    h3{
+        color: brown;
+    }
+    .elementos__social{
+        color: white;
+    }
     
 }
