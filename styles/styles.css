@@ -30,6 +30,9 @@ body{
     
 }
 
+.navbar-dark .navbar-toggler-icon{
+    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba%28255, 0, 0, 1%29' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
+}
 .boton{
     font-size: 1.5rem;
 }
@@ -73,19 +76,20 @@ p{
 footer{
     background-color: black;
     color: white;
-    margin-top: 10px;
+    margin-top: 1rem;
+    
 }
 
 
 ul li{
     display: inline-block;
-    margin-right: 15p;
+    margin-right: 1.5rem;
 
 }
 .elementos__social{
     display: flex;
     color: darkgray;
-    font-size: 25px;
+    font-size: 2.5 rem;
     justify-content: space-between;
 }
 .elementos__social:hover{
@@ -102,7 +106,10 @@ ul li{
 
 
 /* Sucursales */
-
+.container__sucursal__imagen{
+    width: 60rem;
+    height: 45rem;
+}
 iframe:first-child{
     margin-bottom: 50px;
 }
@@ -123,7 +130,25 @@ img{
 /* Responsive*/
 
 
-@media (min-width:480px)  {
-
+@media all and (max-width:480px)  {
+   
+    h3{
+        color: darkslategrey;
+        font-family: 'Courier New', Courier, monospace;
+    }
+    .main__section__image{
+        width: 80%;
+        height: 27.5rem;
+    }
+    footer{
+        text-align: center;
+    }
+    .card__colTexto{
+        text-align: center;
+        justify-content: center;
+    }
+    .container__sucursal{
+        width: 100%;
+    }
     
 }
