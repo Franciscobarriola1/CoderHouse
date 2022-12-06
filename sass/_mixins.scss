@@ -1,0 +1,7 @@
+@mixin fondofooter {
+    background-color: black;    
+}
+footer{
+    @include fondofooter
+}
+
