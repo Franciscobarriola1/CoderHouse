@@ -1,3 +1,4 @@
+
 /*Pagina index.html */
 html{
     font-size: 62.5%; /* 1rem = 10px*/
@@ -59,7 +60,11 @@ p{
 }
 
 /* Fonts End */
-
+img {
+    max-width: 100%;
+    height: auto;
+    width: auto\9; }
+  
 
 
 .main__section__image{
@@ -69,32 +74,33 @@ p{
 
 /* Footer*/
 
-footer{
-    /*background-color:map-get($colores, fondo_footer); */
-    color: map-get($colores , texto-footer );
-    margin-top: 1rem;
-    
-}
-
-
-ul li{
-    display: inline-block;
-    margin-right: 1.5rem;
-
-}
-.elementos__social{
-    display: flex;
-    color: map-get($colores,elemento-social );
-    font-size: map-get($tamañofuente, h2 );
-    justify-content: space-between;
-}
-.elementos__social:hover{
+.pie{
     color: white;
-
-}
-
-.franquicias{
-    margin-right: 2rem;
+    .pie__lista{
+        list-style: none;
+        
+        .pie__lista__item{
+        
+        display: inline-block;
+       
+        .pie__lista__item__elementos__social{
+            font-size: 2.5rem;
+            color: map-get($colores,texto-footer);
+        }}
+    }
+    .pie__texto{
+        color: map-get($colores,texto-footer);
+        text-align: center;
+        
+    }
+    .pie__texto__equipo{
+        text-align: end;
+        margin-right: 2rem;
+    }
+    .pie__texto__derechos{
+        font-size: 1rem;
+        text-align: center;
+    }
 }
 
 /* Pagina sobre.html*/
@@ -136,9 +142,26 @@ img{
         width: 80%;
         height: 27.5rem;
     }
-    footer{
+    .pie{
         text-align: center;
-    }
+        .pie__texto{
+            color:map-get($colores, texto-footer);
+        }
+        .pie__texto__equipo{
+            text-align: center;
+            justify-items: center;
+            margin: auto 0;}
+        }
+        .pie__lista{
+            list-style: none;    
+            .pie__lista__item{
+                display: inline-block;
+               .pie__lista__item__elementos__social{
+                    font-size: 2.5rem;
+                    color: map-get($colores,texto-footer);
+                }}
+            }
+    
     .card__colTexto{
         text-align: center;
         justify-content: center;
@@ -149,8 +172,9 @@ img{
     h1{
         color: rgb(233, 67, 67);
     }
-    h3{
+    h2{
         color: brown;
+        font-size: map-get($tamañofuente, h2);
     }
     .elementos__social{
         color: white;
