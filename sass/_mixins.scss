@@ -5,3 +5,17 @@ footer{
     @include fondofooter
 }
 
+@mixin titulo{
+    color: red;
+}
+
+h1{
+    @include titulo
+}
+
+@mixin subtitulos{
+    color: darkred;
+}
+h2{
+    @include subtitulos;
+}
